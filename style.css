@@ -23,10 +23,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.header{
-    
-}
-
 .navbar {
     display: flex;
     background-color: black;
@@ -68,12 +64,12 @@ body {
     padding-bottom: 220px;
 }
 
-.hero-co{
+.hero-co {
     display: flex;
     justify-content: space-between;
 }
 
-.hero-co img{
+.hero-co img {
     width: 40%;
 }
 
@@ -120,7 +116,7 @@ body {
     color: var(--black);
 }
 
-.about-us{
+.about-us {
     padding-top: 140px;
     padding-bottom: 50px;
 }
@@ -234,8 +230,9 @@ body {
     border-radius: 15px;
 }
 
-.kontak-form h2{
+.kontak-form h2 {
     font-size: 25px;
+    margin-bottom: 15px;
 }
 
 form {
@@ -245,33 +242,35 @@ form {
     width: 100%;
     max-width: 600px;
     border-radius: 10px;
-    margin: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 form input,
 form textarea,
 form button {
-    border: 0;
-    margin: 5px;
-    padding: 20px;
-    outline: none;
-    font-size: 16px;
-    border-radius: 10px;
-    font-family: 'Space Grotesk', sans-serif;
-    background-color: #d2d2d2;
-    width: 400px;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    background-color: #d4d4d4;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 /* Muridd-----------------------------------------------------*/
 
-.murid{
+.murid {
     padding-top: 140px;
     margin-left: 60px;
     margin-right: 60px;
     padding-bottom: 80px;
 }
 
-.murid-title{
+.murid-title {
     font-size: 28px;
     font-weight: 800;
     margin-bottom: 20px;
@@ -329,7 +328,7 @@ form button {
     font-size: 30px;
 }
 
-.gallery-not-found{
+.gallery-not-found {
     padding-top: 280px;
     padding-bottom: 180px;
     margin-left: 60px;
@@ -337,51 +336,51 @@ form button {
     text-align: center;
 }
 
-.gallery-not-found h1{
+.gallery-not-found h1 {
     font-size: 45px;
     font-weight: 800;
 }
 
-.gallery-not-found h2{
+.gallery-not-found h2 {
     font-weight: 600;
 }
 
-@media screen and (max-width: 500px){
-    ul li a{
+@media screen and (max-width: 500px) {
+    ul li a {
         display: none;
     }
 
-    .hero-co{
+    .hero-co {
         flex-wrap: wrap-reverse;
     }
 
-    .hero-co img{
+    .hero-co img {
         width: 100%;
         margin-bottom: 80px;
     }
 
-    .hero-info h1{
+    .hero-info h1 {
         font-size: 60px;
     }
 
-    .hero-info h2{
+    .hero-info h2 {
         font-size: 18px;
     }
 
-    .hero-info h3{
+    .hero-info h3 {
         margin-top: 20px;
         margin-bottom: 35px;
         font-size: 16px;
     }
 
-    .about-us{
+    .about-us {
         margin-left: 60px;
         margin-right: 60px;
         padding-top: 20px;
         padding-bottom: 20px;
     }
 
-    .about-expentwo br{
+    .about-expentwo br {
         display: none;
     }
 
@@ -400,7 +399,7 @@ form button {
         grid-row-gap: 10px;
     }
 
-    .contact-co{
+    .contact-co {
         display: flex;
         flex-wrap: wrap;
     }
@@ -409,11 +408,11 @@ form button {
         padding: 20px;
         border-radius: 15px;
     }
-    
-    .kontak-form h2{
+
+    .kontak-form h2 {
         font-size: 25px;
     }
-    
+
     form {
         display: flex;
         flex-direction: column;
@@ -421,24 +420,26 @@ form button {
         width: 100%;
         max-width: 600px;
         border-radius: 10px;
-        margin: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     form input,
     form textarea,
     form button {
-        border: 0;
-        margin: 5px;
-        padding: 20px;
-        outline: none;
-        font-size: 16px;
-        border-radius: 10px;
-        font-family: 'Space Grotesk', sans-serif;
-        background-color: #d2d2d2;
-        width: 260px;
-    }
+        width: 100%;
+        padding: 18px;
+        border: none;
+        border-radius: 8px;
+        margin-bottom: 5px;
+        background-color: #d4d4d4;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+    }    
 
-    .container-kontak{
+    .container-kontak {
         margin-top: 50px;
     }
 
@@ -448,10 +449,29 @@ form button {
         grid-column-gap: 5px;
         grid-row-gap: 5px;
     }
+
+    .copyright a{
+        font-size: 14px;
+    }
+
+    .murid{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .card{
+        margin-bottom: 20px;
+    }
 }
 
-@media screen and (max-width: 450px){
-    .contact-co{
+@media screen and (max-width: 450px) {
+    .navbar{
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+
+    .contact-co {
         display: flex;
         flex-wrap: wrap;
     }
@@ -460,77 +480,153 @@ form button {
         padding: 20px;
         border-radius: 15px;
     }
-    
-    .kontak-form h2{
+
+    .kontak-form h2 {
         font-size: 25px;
     }
-    
+
     form {
         display: flex;
         flex-direction: column;
-        padding: 1vw 1vw;
+        padding: 2vw 3vw;
         width: 100%;
         max-width: 600px;
         border-radius: 10px;
-        margin: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     form input,
     form textarea,
     form button {
-        border: 0;
-        margin: 5px;
-        padding: 20px;
-        outline: none;
-        font-size: 16px;
-        border-radius: 10px;
-        font-family: 'Space Grotesk', sans-serif;
-        background-color: #d2d2d2;
-        width: 250px;
-    }
+        width: 100%;
+        padding: 18px;
+        border: none;
+        border-radius: 8px;
+        margin-bottom: 5px;
+        background-color: #d4d4d4;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+    }    
 
-    .container-kontak{
+    .container-kontak {
         margin-top: 50px;
     }
 
-    .home, .about-us, .gallery-co, .contact-co{
+    .home,
+    .about-us,
+    .gallery-co,
+    .contact-co {
         margin-left: 40px;
         margin-right: 40px;
     }
-}
 
-@media screen and (max-width: 410px){
-    .hero-info h1{
-        font-size: 50px;
+    .hero-info h1 {
+        font-size: 55px;
     }
 
-    .hero-info h2{
+    .hero-info h2 {
         font-size: 16px;
     }
 
-    .hero-info h3{
+    .hero-info h3 {
         margin-top: 20px;
         margin-bottom: 35px;
         font-size: 14px;
     }
 
-    .about-expentwo h1{
-        font-size: 25px;
+    .about-expentwo h1 {
+        font-size: 30px;
     }
 
-    .about-expentwo p{
+    .about-expentwo p {
         font-size: 14px;
     }
 
-    .about-class h1{
+    .about-class h1 {
         font-size: 28px;
     }
 
-    .about-class h2{
+    .about-class h2 {
         font-size: 18px;
     }
 
-    .gallery h1{
+    .gallery h1 {
+        font-size: 30px;
+    }
+
+    .button {
+        padding: 6px 25px;
+        font-size: 15px;
+        gap: 15px;
+        font-weight: 700;
+    }
+
+    .contact-info br {
+        display: none;
+    }
+
+    .contact-info span {
+        font-size: 14px;
+    }
+
+    .social-media-co h1 {
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+
+    .social-media-co a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    
+
+    .expentwo {
+        display: flex;
+        align-items: center;
+        color: white;
+        gap: 10px;
+    }
+    
+    .expentwo img {
+        max-width: 70px;
+    }
+
+    .hero-info h1 {
+        font-size: 50px;
+    }
+
+    .hero-info h2 {
+        font-size: 16px;
+    }
+
+    .hero-info h3 {
+        margin-top: 20px;
+        margin-bottom: 35px;
+        font-size: 14px;
+    }
+
+    .about-expentwo h1 {
+        font-size: 25px;
+    }
+
+    .about-expentwo p {
+        font-size: 14px;
+    }
+
+    .about-class h1 {
+        font-size: 28px;
+    }
+
+    .about-class h2 {
+        font-size: 18px;
+    }
+
+    .gallery h1 {
         font-size: 25px;
     }
 
@@ -541,15 +637,15 @@ form button {
         font-weight: 700;
     }
 
-    .contact-info br{
+    .contact-info br {
         display: none;
     }
 
-    .contact-info span{
+    .contact-info span {
         font-size: 14px;
     }
 
-    .social-media-co h1{
+    .social-media-co h1 {
         font-size: 22px;
         margin-bottom: 5px;
     }
@@ -559,36 +655,42 @@ form button {
     }
 }
 
-@media screen and (max-width: 370px){
+@media screen and (max-width: 370px) {
     form {
         display: flex;
         flex-direction: column;
-        padding: 1vw 1vw;
+        padding: 2vw 3vw;
         width: 100%;
         max-width: 600px;
         border-radius: 10px;
-        margin: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     form input,
     form textarea,
     form button {
-        border: 0;
-        margin: 5px;
-        padding: 20px;
-        outline: none;
-        font-size: 16px;
-        border-radius: 10px;
-        font-family: 'Space Grotesk', sans-serif;
-        background-color: #d2d2d2;
-        width: 220px;
-    }
+        width: 100%;
+        padding: 18px;
+        border: none;
+        border-radius: 8px;
+        margin-bottom: 5px;
+        background-color: #d4d4d4;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+    }    
 
-    .expentwo-contact img{
+    .expentwo-contact img {
         width: 80%;
     }
 
-    .expentwo-contact h1{
+    .expentwo-contact h1 {
         font-size: 35px;
+    }
+
+    .about-class span{
+        font-size: 25px;
     }
 }
